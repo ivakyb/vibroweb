@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="UTF-8">
+	<title>Vibro</title>
+	<style type="text/css">
+		body {
+			margin: 0px;
+			padding: 0px;
+		}
+		#container {
+			width : 1000px;
+			height: 480px;
+			margin: 8px auto;
+		}
+	</style>
+	<script type="text/javascript" src="script/libs/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="script/libs/flotr2.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+	<!--<h3 align="center">Vibration graph</h3>-->
+	<div>Select vibro dump file: <input id="file-input" type="file" /></div>
+	<!--<div>or enter name of file stored on server: <input id="filename" type="text" value="ip208-synthetic.hex" /><input id="enter" type="button" value="Enter" /> </div>-->
+
+	<!--<h3 align="center">Vibration graph</h3>-->
+	<div id="container"></div>
+	<div id="ajaxStatus" style="font-style: italic;">Здесь будет ответ сервера</div>
+
+	<!--<pre id="file-content"></pre>-->
+	<!--[if IE]>
+	<script type="text/javascript" src="/static/lib/FlashCanvas/bin/flashcanvas.js"></script>
+	[endif]-->
+	<script type="text/javascript" src="script/vibro-client.js"></script>
+</body>
+</html>
